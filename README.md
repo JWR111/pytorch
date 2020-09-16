@@ -28,7 +28,8 @@ torch.add(x,x),torch.arange(number),torch.sum(x,dim),torch.transpose(x,0,1),torc
 1.15 pack_padded_sequence(padded_tensor, lengths,batch_first=True)  
 1.16 pad_packed_sequence(packed_tensor, batch_first=True)  
 1.17 torch.matmul  
-## 建立模型順序
+1.18 torch.save   
+## 建立模型順序 
 2.1 nn.Module,super(model,self).__init__()   
 2.1.1 nn.Linear(input_dim,output_dim)  
 2.1.2 torch.sigmoid  
