@@ -29,6 +29,8 @@ torch.add(x,x),torch.arange(number),torch.sum(x,dim),torch.transpose(x,0,1),torc
 1.16 pad_packed_sequence(packed_tensor, batch_first=True)  
 1.17 torch.matmul  
 1.18 torch.save  
+1.19 torch.cuda.is_available    
+1.20 torch.device  
 ## 建立模型順序
 2.1 nn.Module,super(model,self).__init__()   
 2.1.1 nn.Linear(input_dim,output_dim)  
@@ -53,8 +55,10 @@ torch.add(x,x),torch.arange(number),torch.sum(x,dim),torch.transpose(x,0,1),torc
 2.2.1 nn.MSELoss(outputs,targets)  
 2.2.2 nn.CrossEntropyLoss(outputs,targets),F.cross_entropy  
 2.2.3 nn.BCELoss(outputs,targets)  
+2.2.4 nn.BCEWithLogitsLoss  
 2.3 優化方法  
 2.3.1 optim.Adam(params=model.parameters(),lr)  
 2.3.2 optim.lr_scheduler.ReduceLROnPlateau(optimizer,mode='min', factor=0.5,patience=1)  
-2.4 設定epochs,batch_size,n_batches,model.train(),optimizer.zero_grad(),loss.backward(),optimizer.step(),scheduler.step()  
+2.4 設定epochs,batch_size,n_batches,model.train(),optimizer.zero_grad(),loss.backward(),optimizer.step(),scheduler.step()   
+2.5 測試classifier.load_state_dict(torch.load(train_state\['model_filename'\]))  
 
