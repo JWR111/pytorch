@@ -50,7 +50,7 @@ torch.add(x,x),torch.arange(number),torch.sum(x,dim),torch.transpose(x,0,1),torc
 2.1.14 nn.GRU(input_size,hidden_size,batch_first,bidirectional)  
 2.1.15 nn.RNNCell(input_size, hidden_size)  
 2.1.16 nn.GRUCell(input_size, hidden_size)  
-2.1.17 model.eval(),model.load_state_dict(torch.load(檔名)),model.to(device)  
+2.1.17 model.eval(),model.load_state_dict(torch.load(檔名)),model.to(device),model.fc1.weight.shape  
 2.2 損失函數  
 2.2.1 nn.MSELoss(outputs,targets)  
 2.2.2 nn.CrossEntropyLoss(outputs,targets),F.cross_entropy  
